@@ -10,23 +10,19 @@ for _ in range(N):
     b = int(b)
 
     if a == 'W':
-        for i in range(b):
-            y += ni[0]
-            x += nj[0]
+        y += ni[0] * b
+        x += nj[0] * b
     
     elif a == 'S':
-        for i in range(b):
-            y += ni[1]
-            x += nj[1]
+        y += ni[1] * b
+        x += nj[1] * b
 
     elif a == 'N':
-        for i in range(b):
-            y += ni[2]
-            x += nj[2]
+        y += ni[2] * b
+        x += nj[2] * b
 
     elif a == 'E':
-        for i in range(b):
-            y += ni[3]
-            x += nj[3]
+        y += ni[3] * b
+        x += nj[3] * b
 
 print(x,y)
